@@ -1,0 +1,27 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+
+license="CC BY-NC-SA 3.0"
+issueTrackerURL="https://github.com/J4gm/and_there_was_only_one_bed/issues"
+
+[[mods]]
+	modId="and_there_was_only_one_bed"
+	version="1.20.1-1.0"
+	displayName="And There Was Only One Bed"
+	displayURL="https://github.com/J4gm/and_there_was_only_one_bed"
+	authors="Jagm"
+	description="Allows multiple players to sleep in one bed."
+	
+[[dependencies.and_there_was_only_one_bed]]
+    modId="forge"
+    mandatory=true
+    versionRange="[47,)"
+    ordering="NONE"
+    side="CLIENT"
+
+[[dependencies.and_there_was_only_one_bed]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.20.1,)"
+    ordering="NONE"
+    side="BOTH"
