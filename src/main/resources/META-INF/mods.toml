@@ -1,27 +1,21 @@
-modLoader="javafml"
-loaderVersion="[47,)"
-
-license="CC BY-NC-SA 3.0"
-issueTrackerURL="https://github.com/J4gm/and_there_was_only_one_bed/issues"
-
-[[mods]]
-	modId="and_there_was_only_one_bed"
-	version="1.20.1-1.0"
-	displayName="And There Was Only One Bed"
-	displayURL="https://github.com/J4gm/and_there_was_only_one_bed"
-	authors="Jagm"
-	description="Allows multiple players to sleep in one bed."
-	
-[[dependencies.and_there_was_only_one_bed]]
-    modId="forge"
-    mandatory=true
-    versionRange="[47,)"
+modLoader="javafml" #mandatory
+loaderVersion="${loader_version_range}" #mandatory This is typically bumped every Minecraft version by Forge. See our download page for lists of versions.
+license="${mod_license}"
+[[mods]] #mandatory
+modId="${mod_id}" #mandatory
+version="${mod_version}" #mandatory
+displayName="${mod_name}" #mandatory
+authors="${mod_authors}" #optional
+description='''${mod_description}'''
+[[dependencies.${mod_id}]] #optional
+    modId="forge" #mandatory
+    mandatory=true #mandatory
+    versionRange="${forge_version_range}" #mandatory
     ordering="NONE"
-    side="CLIENT"
-
-[[dependencies.and_there_was_only_one_bed]]
+    side="BOTH"
+[[dependencies.${mod_id}]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.20.1,)"
+    versionRange="${minecraft_version_range}"
     ordering="NONE"
     side="BOTH"
